@@ -5,7 +5,7 @@ using namespace std;
 typedef vector<uint32_t>  Desctype;
 
 void brute_force_match(const vector<Desctype> &desc1, const vector<Desctype> &desc2, vector<DMatch> &matches) {
-  const int d_max = 95;
+  const int d_max = 40;
 
   for (int i = 0; i < desc1.size(); ++i) {
     cv::DMatch m{i, 0, 256};

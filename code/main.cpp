@@ -6,24 +6,16 @@ using namespace std;
 using namespace cv;
 
 
-void harris_opencv(const string& path);
+void harris_opencv(const Mat& img, vector<KeyPoint>& kp_vec);
 void harris_self(const Mat& img, int num_of_corner, vector<KeyPoint>& kp_vec);
 void brief_self(const Mat& img, const vector<KeyPoint>& kp_vec, vector<KeyPoint>& nice_kp_vec, vector<vector<uint32_t>>& descriptors);
 void brute_force_match(const vector<vector<uint32_t>> &desc1, const vector<vector<uint32_t>> &desc2, vector<DMatch> &matches);
 void brief_gao(const cv::Mat &img, vector<cv::KeyPoint> &keypoints, vector<KeyPoint>& nice_kp_vec,vector<vector<uint32_t>> &descriptors);
 int main()
 {	
-	int num_of_corner = 1000;
-	string path_0 = "../../campus/campus_001.jpg";
-	/************************************************/
-	harris_opencv(path_0);
-	vector<KeyPoint> kp_vec;
-	Mat img = imread(path_0);
-	harris_self(img, 100, kp_vec);
-	/************************************************/
-
-	/*
-	string path_1 = "../../campus/campus_002.jpg";
+	int num_of_corner = 200;
+	string path_0 = "../../campus/campus_000.jpg";
+	string path_1 = "../../campus/campus_001.jpg";
 	Mat img_000;
 	Mat img_001;
 	vector<KeyPoint> kp_000;
@@ -38,7 +30,10 @@ int main()
 	img_001 = imread(path_1, IMREAD_COLOR);
 	harris_self(img_000, num_of_corner, kp_000);
 	harris_self(img_001, num_of_corner, kp_001);
-
+	// harris_opencv(img_000, kp_000);
+	// harris_opencv(img_001, kp_001);
+	// cout << kp_000.size() << endl;
+	// cout << kp_001.size() << endl;
 	brief_self(img_000, kp_000, nice_kp_vec_000, descriptors_000);
 	brief_self(img_001, kp_001, nice_kp_vec_001, descriptors_001);
 	// brief_gao(img_000, kp_000, nice_kp_vec_000, descriptors_000);
@@ -51,7 +46,6 @@ int main()
 	imshow("matches", image_show);
 	imwrite("matches.png", image_show);
 	waitKey(0);
-	*/
 
 	// vector<uint32_t> desc_1 = descriptors_001[0]; 
 	// cout << desc_1[0] << endl;

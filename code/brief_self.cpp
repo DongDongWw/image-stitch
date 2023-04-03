@@ -3,11 +3,9 @@
 #include <opencv2/opencv.hpp>
 #include <opencv2/core/eigen.hpp>
 #include <bitset>
-// #include <cmath>
-// #include <random>
 using namespace cv;
 using namespace std;
-
+extern int ORB_pattern[256 * 4];
 typedef vector<uint32_t>  Desctype;
 void brief_self(const Mat& img, const vector<KeyPoint>& kp_vec, vector<KeyPoint>& nice_kp_vec, vector<Desctype>& descriptors) {
     // ******************* convert cv to Eigen *******************
@@ -34,30 +32,30 @@ void brief_self(const Mat& img, const vector<KeyPoint>& kp_vec, vector<KeyPoint>
     }
 
     // random 256 pairs of points: follows a guassion distribution
-    vector<pair<int, int>> random_pairs;
+    // vector<pair<int, int>> random_pairs;
 
-    std::random_device rd;
-    std::mt19937 gen(rd());
-    std::normal_distribution<double> dist(0, 4);
-    for(int i=0; i<256; ++i) {
-        // guassion distribution
-        int x1 = static_cast<int>(dist(gen));
-        x1 = std::min(half_patch_size, std::max(-half_patch_size, x1));
-        int y1 = static_cast<int>(dist(gen));
-        y1 = std::min(half_patch_size, std::max(-half_patch_size, y1));
-        int x2 = static_cast<int>(dist(gen));
-        x2 = std::min(half_patch_size, std::max(-half_patch_size, x2));
-        int y2 = static_cast<int>(dist(gen));
-        y2 = std::min(half_patch_size, std::max(-half_patch_size, y2));
-        // uniform distribution
-        // int x1 = rand()%(half_patch_size*2+1) - half_patch_size;
-        // int y1 = rand()%(half_patch_size*2+1) - half_patch_size;
-        // int x2 = rand()%(half_patch_size*2+1) - half_patch_size;
-        // int y2 = rand()%(half_patch_size*2+1) - half_patch_size;
-        // cout << x1 << y1 << x2 << y2 << endl;
-        random_pairs.push_back(make_pair(x1, y1));
-        random_pairs.push_back(make_pair(x2, y2));
-    }
+    // std::random_device rd;
+    // std::mt19937 gen(rd());
+    // std::normal_distribution<double> dist(0, 4);
+    // for(int i=0; i<256; ++i) {
+    //     // guassion distribution
+    //     int x1 = static_cast<int>(dist(gen));
+    //     x1 = std::min(half_patch_size, std::max(-half_patch_size, x1));
+    //     int y1 = static_cast<int>(dist(gen));
+    //     y1 = std::min(half_patch_size, std::max(-half_patch_size, y1));
+    //     int x2 = static_cast<int>(dist(gen));
+    //     x2 = std::min(half_patch_size, std::max(-half_patch_size, x2));
+    //     int y2 = static_cast<int>(dist(gen));
+    //     y2 = std::min(half_patch_size, std::max(-half_patch_size, y2));
+    //     // uniform distribution
+    //     // int x1 = rand()%(half_patch_size*2+1) - half_patch_size;
+    //     // int y1 = rand()%(half_patch_size*2+1) - half_patch_size;
+    //     // int x2 = rand()%(half_patch_size*2+1) - half_patch_size;
+    //     // int y2 = rand()%(half_patch_size*2+1) - half_patch_size;
+    //     // cout << x1 << y1 << x2 << y2 << endl;
+    //     random_pairs.push_back(make_pair(x1, y1));
+    //     random_pairs.push_back(make_pair(x2, y2));
+    // }
     // theta -> rotate -> descriptor
 
     for(int i=0; i<nice_kp_vec.size(); ++i) {
@@ -83,10 +81,10 @@ void brief_self(const Mat& img, const vector<KeyPoint>& kp_vec, vector<KeyPoint>
 
             uint32_t desc_32 = 0;
             for(int k=0; k<32; ++k) {
-                int x1 = random_pairs[(j*32+k)].first;
-                int y1 = random_pairs[(j*32+k)].second;
-                int x2 = random_pairs[(j*32+k)+1].first;
-                int y2 = random_pairs[(j*32+k)+1].second;
+                int x1 = ORB_pattern[(j*32+k)];
+                int y1 = ORB_pattern[(j*32+k)+1];
+                int x2 = ORB_pattern[(j*32+k)+2];
+                int y2 = ORB_pattern[(j*32+k)+3];
                 // rotate
                 float x1_r = x1*cos_theta - y1*sin_theta + x;
                 float y1_r = y1*cos_theta + x1*sin_theta + y;
