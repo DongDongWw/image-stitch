@@ -9,8 +9,12 @@ file(REMOVE_RECURSE
   "CMakeFiles/stitch.dir/harris_opencv.cpp.o.d"
   "CMakeFiles/stitch.dir/harris_self.cpp.o"
   "CMakeFiles/stitch.dir/harris_self.cpp.o.d"
+  "CMakeFiles/stitch.dir/image_wrap.cpp.o"
+  "CMakeFiles/stitch.dir/image_wrap.cpp.o.d"
   "CMakeFiles/stitch.dir/main.cpp.o"
   "CMakeFiles/stitch.dir/main.cpp.o.d"
+  "CMakeFiles/stitch.dir/ransac_homo.cpp.o"
+  "CMakeFiles/stitch.dir/ransac_homo.cpp.o.d"
   "stitch"
   "stitch.pdb"
 )

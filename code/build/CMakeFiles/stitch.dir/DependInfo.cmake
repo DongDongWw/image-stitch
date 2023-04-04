@@ -13,7 +13,9 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/ddong/image_stitch/code/brute_force_match.cpp" "CMakeFiles/stitch.dir/brute_force_match.cpp.o" "gcc" "CMakeFiles/stitch.dir/brute_force_match.cpp.o.d"
   "/home/ddong/image_stitch/code/harris_opencv.cpp" "CMakeFiles/stitch.dir/harris_opencv.cpp.o" "gcc" "CMakeFiles/stitch.dir/harris_opencv.cpp.o.d"
   "/home/ddong/image_stitch/code/harris_self.cpp" "CMakeFiles/stitch.dir/harris_self.cpp.o" "gcc" "CMakeFiles/stitch.dir/harris_self.cpp.o.d"
+  "/home/ddong/image_stitch/code/image_wrap.cpp" "CMakeFiles/stitch.dir/image_wrap.cpp.o" "gcc" "CMakeFiles/stitch.dir/image_wrap.cpp.o.d"
   "/home/ddong/image_stitch/code/main.cpp" "CMakeFiles/stitch.dir/main.cpp.o" "gcc" "CMakeFiles/stitch.dir/main.cpp.o.d"
+  "/home/ddong/image_stitch/code/ransac_homo.cpp" "CMakeFiles/stitch.dir/ransac_homo.cpp.o" "gcc" "CMakeFiles/stitch.dir/ransac_homo.cpp.o.d"
   )
 
 # Targets to which this target links.

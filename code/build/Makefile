@@ -262,6 +262,30 @@ harris_self.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/stitch.dir/build.make CMakeFiles/stitch.dir/harris_self.cpp.s
 .PHONY : harris_self.cpp.s
 
+image_wrap.o: image_wrap.cpp.o
+.PHONY : image_wrap.o
+
+# target to build an object file
+image_wrap.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stitch.dir/build.make CMakeFiles/stitch.dir/image_wrap.cpp.o
+.PHONY : image_wrap.cpp.o
+
+image_wrap.i: image_wrap.cpp.i
+.PHONY : image_wrap.i
+
+# target to preprocess a source file
+image_wrap.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stitch.dir/build.make CMakeFiles/stitch.dir/image_wrap.cpp.i
+.PHONY : image_wrap.cpp.i
+
+image_wrap.s: image_wrap.cpp.s
+.PHONY : image_wrap.s
+
+# target to generate assembly for a file
+image_wrap.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stitch.dir/build.make CMakeFiles/stitch.dir/image_wrap.cpp.s
+.PHONY : image_wrap.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -310,6 +334,30 @@ orb_opencv.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/orb_opencv.dir/build.make CMakeFiles/orb_opencv.dir/orb_opencv.cpp.s
 .PHONY : orb_opencv.cpp.s
 
+ransac_homo.o: ransac_homo.cpp.o
+.PHONY : ransac_homo.o
+
+# target to build an object file
+ransac_homo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stitch.dir/build.make CMakeFiles/stitch.dir/ransac_homo.cpp.o
+.PHONY : ransac_homo.cpp.o
+
+ransac_homo.i: ransac_homo.cpp.i
+.PHONY : ransac_homo.i
+
+# target to preprocess a source file
+ransac_homo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stitch.dir/build.make CMakeFiles/stitch.dir/ransac_homo.cpp.i
+.PHONY : ransac_homo.cpp.i
+
+ransac_homo.s: ransac_homo.cpp.s
+.PHONY : ransac_homo.s
+
+# target to generate assembly for a file
+ransac_homo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stitch.dir/build.make CMakeFiles/stitch.dir/ransac_homo.cpp.s
+.PHONY : ransac_homo.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -335,12 +383,18 @@ help:
 	@echo "... harris_self.o"
 	@echo "... harris_self.i"
 	@echo "... harris_self.s"
+	@echo "... image_wrap.o"
+	@echo "... image_wrap.i"
+	@echo "... image_wrap.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
 	@echo "... orb_opencv.o"
 	@echo "... orb_opencv.i"
 	@echo "... orb_opencv.s"
+	@echo "... ransac_homo.o"
+	@echo "... ransac_homo.i"
+	@echo "... ransac_homo.s"
 .PHONY : help
 
 

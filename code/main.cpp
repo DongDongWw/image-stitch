@@ -1,4 +1,3 @@
-#include <string>
 #include <opencv2/opencv.hpp>
 #include <Eigen/Core>
 #include <Eigen/Dense>
@@ -15,6 +14,7 @@ void brute_force_match(const vector<vector<uint32_t>> &desc1, const vector<vecto
 void brief_gao(const cv::Mat &img, vector<cv::KeyPoint> &keypoints, vector<KeyPoint>& nice_kp_vec,vector<vector<uint32_t>> &descriptors);
 void ransac_homo(const vector<KeyPoint>& kp_vec1, const vector<KeyPoint>& kp_vec2, const vector<DMatch> &matches, Eigen::MatrixXf& H);
 void image_stitch(const Mat& img, const Mat& img_wrap, const Eigen::MatrixXf& H, Mat& img_stitch);
+
 int main()
 {	
 	int num_of_corner = 200;
