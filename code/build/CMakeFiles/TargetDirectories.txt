@@ -1,4 +1,3 @@
 /home/ddong/image_stitch/code/build/CMakeFiles/stitch.dir
-/home/ddong/image_stitch/code/build/CMakeFiles/orb_opencv.dir
 /home/ddong/image_stitch/code/build/CMakeFiles/edit_cache.dir
 /home/ddong/image_stitch/code/build/CMakeFiles/rebuild_cache.dir

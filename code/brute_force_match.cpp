@@ -16,7 +16,7 @@ void brute_force_match(const vector<Desctype> &desc1, const vector<Desctype> &de
 		    bitset<32> xor_bits(xor_desc);
         distance += xor_bits.count();
       }
-      if (distance < d_max && distance < m.distance) {
+      if (distance < m.distance) {
         m.distance = distance;
         m.trainIdx = j;
       }

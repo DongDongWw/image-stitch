@@ -73,15 +73,15 @@ CMakeFiles/orb_opencv.dir/orb_opencv.cpp.o: CMakeFiles/orb_opencv.dir/flags.make
 CMakeFiles/orb_opencv.dir/orb_opencv.cpp.o: ../orb_opencv.cpp
 CMakeFiles/orb_opencv.dir/orb_opencv.cpp.o: CMakeFiles/orb_opencv.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddong/image_stitch/code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/orb_opencv.dir/orb_opencv.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/orb_opencv.dir/orb_opencv.cpp.o -MF CMakeFiles/orb_opencv.dir/orb_opencv.cpp.o.d -o CMakeFiles/orb_opencv.dir/orb_opencv.cpp.o -c /home/ddong/image_stitch/code/orb_opencv.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/orb_opencv.dir/orb_opencv.cpp.o -MF CMakeFiles/orb_opencv.dir/orb_opencv.cpp.o.d -o CMakeFiles/orb_opencv.dir/orb_opencv.cpp.o -c /home/ddong/image_stitch/code/orb_opencv.cpp
 
 CMakeFiles/orb_opencv.dir/orb_opencv.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/orb_opencv.dir/orb_opencv.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ddong/image_stitch/code/orb_opencv.cpp > CMakeFiles/orb_opencv.dir/orb_opencv.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ddong/image_stitch/code/orb_opencv.cpp > CMakeFiles/orb_opencv.dir/orb_opencv.cpp.i
 
 CMakeFiles/orb_opencv.dir/orb_opencv.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/orb_opencv.dir/orb_opencv.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ddong/image_stitch/code/orb_opencv.cpp -o CMakeFiles/orb_opencv.dir/orb_opencv.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ddong/image_stitch/code/orb_opencv.cpp -o CMakeFiles/orb_opencv.dir/orb_opencv.cpp.s
 
 # Object files for target orb_opencv
 orb_opencv_OBJECTS = \

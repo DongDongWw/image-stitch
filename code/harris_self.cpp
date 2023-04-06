@@ -105,21 +105,7 @@ void harris_self(const Mat& img, int num_of_corner, vector<KeyPoint>& kp_vec) {
     sort(R_vec.begin(), R_vec.end(), [](const pair<pair<int, int>, double>& a, const pair<pair<int, int>, double>& b) {
         return a.second > b.second;
     });
-    // float max_r = R_nms.maxCoeff();
-    // float min_r = R_nms.minCoeff();
-    // R_nms = 0+ (R_nms.array()-min_r)/(max_r - min_r)*255;
-    // int count = 0;
-    // for(int i=0; i<R_nms.rows(); ++i) {
-    //     for(int j=0; j<R_nms.cols(); ++j) {
-    //         if(R_nms(i, j) > 20) {
-    //             KeyPoint k_p;
-    //             k_p.pt.y = i;
-    //             k_p.pt.x = j;
-    //             kp_vec.push_back(k_p);
-    //             count++;
-    //         }
-    //     }
-    // }
+
 
     for(int i=0; i<num_of_corner; ++i) {
         double k_row = R_vec[i].first.first;
@@ -129,8 +115,5 @@ void harris_self(const Mat& img, int num_of_corner, vector<KeyPoint>& kp_vec) {
         k_p.pt.x = k_col;
         kp_vec.push_back(k_p);
     }
-    // cout << kp_vec << endl;
-    // drawKeypoints(img, kp_vec, img);
-    // imshow(name, img);
-    // waitKey(0);
+
 }

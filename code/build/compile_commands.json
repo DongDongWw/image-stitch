@@ -1,0 +1,42 @@
+[
+{
+  "directory": "/home/ddong/image_stitch/code/build",
+  "command": "/usr/bin/g++  -I/usr/local/include/eigen3 -isystem /usr/local/include/opencv4 -g -o CMakeFiles/stitch.dir/main.cpp.o -c /home/ddong/image_stitch/code/main.cpp",
+  "file": "/home/ddong/image_stitch/code/main.cpp"
+},
+{
+  "directory": "/home/ddong/image_stitch/code/build",
+  "command": "/usr/bin/g++  -I/usr/local/include/eigen3 -isystem /usr/local/include/opencv4 -g -o CMakeFiles/stitch.dir/harris_self.cpp.o -c /home/ddong/image_stitch/code/harris_self.cpp",
+  "file": "/home/ddong/image_stitch/code/harris_self.cpp"
+},
+{
+  "directory": "/home/ddong/image_stitch/code/build",
+  "command": "/usr/bin/g++  -I/usr/local/include/eigen3 -isystem /usr/local/include/opencv4 -g -o CMakeFiles/stitch.dir/brief_self.cpp.o -c /home/ddong/image_stitch/code/brief_self.cpp",
+  "file": "/home/ddong/image_stitch/code/brief_self.cpp"
+},
+{
+  "directory": "/home/ddong/image_stitch/code/build",
+  "command": "/usr/bin/g++  -I/usr/local/include/eigen3 -isystem /usr/local/include/opencv4 -g -o CMakeFiles/stitch.dir/brute_force_match.cpp.o -c /home/ddong/image_stitch/code/brute_force_match.cpp",
+  "file": "/home/ddong/image_stitch/code/brute_force_match.cpp"
+},
+{
+  "directory": "/home/ddong/image_stitch/code/build",
+  "command": "/usr/bin/g++  -I/usr/local/include/eigen3 -isystem /usr/local/include/opencv4 -g -o CMakeFiles/stitch.dir/image_stitch.cpp.o -c /home/ddong/image_stitch/code/image_stitch.cpp",
+  "file": "/home/ddong/image_stitch/code/image_stitch.cpp"
+},
+{
+  "directory": "/home/ddong/image_stitch/code/build",
+  "command": "/usr/bin/g++  -I/usr/local/include/eigen3 -isystem /usr/local/include/opencv4 -g -o CMakeFiles/stitch.dir/ransac_homo.cpp.o -c /home/ddong/image_stitch/code/ransac_homo.cpp",
+  "file": "/home/ddong/image_stitch/code/ransac_homo.cpp"
+},
+{
+  "directory": "/home/ddong/image_stitch/code/build",
+  "command": "/usr/bin/g++  -I/usr/local/include/eigen3 -isystem /usr/local/include/opencv4 -g -o CMakeFiles/stitch.dir/rm_crack.cpp.o -c /home/ddong/image_stitch/code/rm_crack.cpp",
+  "file": "/home/ddong/image_stitch/code/rm_crack.cpp"
+},
+{
+  "directory": "/home/ddong/image_stitch/code/build",
+  "command": "/usr/bin/g++  -I/usr/local/include/eigen3 -isystem /usr/local/include/opencv4 -g -o CMakeFiles/stitch.dir/bright_consistency.cpp.o -c /home/ddong/image_stitch/code/bright_consistency.cpp",
+  "file": "/home/ddong/image_stitch/code/bright_consistency.cpp"
+}
+]

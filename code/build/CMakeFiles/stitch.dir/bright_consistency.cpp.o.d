@@ -1,6 +1,6 @@
-CMakeFiles/orb_opencv.dir/orb_opencv.cpp.o: \
- /home/ddong/image_stitch/code/orb_opencv.cpp /usr/include/stdc-predef.h \
- /usr/local/include/opencv4/opencv2/opencv.hpp \
+CMakeFiles/stitch.dir/bright_consistency.cpp.o: \
+ /home/ddong/image_stitch/code/bright_consistency.cpp \
+ /usr/include/stdc-predef.h /usr/local/include/opencv4/opencv2/opencv.hpp \
  /usr/local/include/opencv4/opencv2/opencv_modules.hpp \
  /usr/local/include/opencv4/opencv2/core.hpp \
  /usr/local/include/opencv4/opencv2/core/cvdef.h \

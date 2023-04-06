@@ -1,5 +1,5 @@
-CMakeFiles/stitch.dir/brief_gao.cpp.o: \
- /home/ddong/image_stitch/code/brief_gao.cpp /usr/include/stdc-predef.h \
+CMakeFiles/stitch.dir/rm_crack.cpp.o: \
+ /home/ddong/image_stitch/code/rm_crack.cpp /usr/include/stdc-predef.h \
  /usr/local/include/opencv4/opencv2/opencv.hpp \
  /usr/local/include/opencv4/opencv2/opencv_modules.hpp \
  /usr/local/include/opencv4/opencv2/core.hpp \

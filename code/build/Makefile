@@ -129,43 +129,6 @@ stitch/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/stitch.dir/build.make CMakeFiles/stitch.dir/build
 .PHONY : stitch/fast
 
-#=============================================================================
-# Target rules for targets named orb_opencv
-
-# Build rule for target.
-orb_opencv: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 orb_opencv
-.PHONY : orb_opencv
-
-# fast build rule for target.
-orb_opencv/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/orb_opencv.dir/build.make CMakeFiles/orb_opencv.dir/build
-.PHONY : orb_opencv/fast
-
-brief_gao.o: brief_gao.cpp.o
-.PHONY : brief_gao.o
-
-# target to build an object file
-brief_gao.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stitch.dir/build.make CMakeFiles/stitch.dir/brief_gao.cpp.o
-.PHONY : brief_gao.cpp.o
-
-brief_gao.i: brief_gao.cpp.i
-.PHONY : brief_gao.i
-
-# target to preprocess a source file
-brief_gao.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stitch.dir/build.make CMakeFiles/stitch.dir/brief_gao.cpp.i
-.PHONY : brief_gao.cpp.i
-
-brief_gao.s: brief_gao.cpp.s
-.PHONY : brief_gao.s
-
-# target to generate assembly for a file
-brief_gao.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stitch.dir/build.make CMakeFiles/stitch.dir/brief_gao.cpp.s
-.PHONY : brief_gao.cpp.s
-
 brief_self.o: brief_self.cpp.o
 .PHONY : brief_self.o
 
@@ -189,6 +152,30 @@ brief_self.s: brief_self.cpp.s
 brief_self.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/stitch.dir/build.make CMakeFiles/stitch.dir/brief_self.cpp.s
 .PHONY : brief_self.cpp.s
+
+bright_consistency.o: bright_consistency.cpp.o
+.PHONY : bright_consistency.o
+
+# target to build an object file
+bright_consistency.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stitch.dir/build.make CMakeFiles/stitch.dir/bright_consistency.cpp.o
+.PHONY : bright_consistency.cpp.o
+
+bright_consistency.i: bright_consistency.cpp.i
+.PHONY : bright_consistency.i
+
+# target to preprocess a source file
+bright_consistency.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stitch.dir/build.make CMakeFiles/stitch.dir/bright_consistency.cpp.i
+.PHONY : bright_consistency.cpp.i
+
+bright_consistency.s: bright_consistency.cpp.s
+.PHONY : bright_consistency.s
+
+# target to generate assembly for a file
+bright_consistency.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stitch.dir/build.make CMakeFiles/stitch.dir/bright_consistency.cpp.s
+.PHONY : bright_consistency.cpp.s
 
 brute_force_match.o: brute_force_match.cpp.o
 .PHONY : brute_force_match.o
@@ -214,30 +201,6 @@ brute_force_match.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/stitch.dir/build.make CMakeFiles/stitch.dir/brute_force_match.cpp.s
 .PHONY : brute_force_match.cpp.s
 
-harris_opencv.o: harris_opencv.cpp.o
-.PHONY : harris_opencv.o
-
-# target to build an object file
-harris_opencv.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stitch.dir/build.make CMakeFiles/stitch.dir/harris_opencv.cpp.o
-.PHONY : harris_opencv.cpp.o
-
-harris_opencv.i: harris_opencv.cpp.i
-.PHONY : harris_opencv.i
-
-# target to preprocess a source file
-harris_opencv.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stitch.dir/build.make CMakeFiles/stitch.dir/harris_opencv.cpp.i
-.PHONY : harris_opencv.cpp.i
-
-harris_opencv.s: harris_opencv.cpp.s
-.PHONY : harris_opencv.s
-
-# target to generate assembly for a file
-harris_opencv.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stitch.dir/build.make CMakeFiles/stitch.dir/harris_opencv.cpp.s
-.PHONY : harris_opencv.cpp.s
-
 harris_self.o: harris_self.cpp.o
 .PHONY : harris_self.o
 
@@ -262,29 +225,29 @@ harris_self.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/stitch.dir/build.make CMakeFiles/stitch.dir/harris_self.cpp.s
 .PHONY : harris_self.cpp.s
 
-image_wrap.o: image_wrap.cpp.o
-.PHONY : image_wrap.o
+image_stitch.o: image_stitch.cpp.o
+.PHONY : image_stitch.o
 
 # target to build an object file
-image_wrap.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stitch.dir/build.make CMakeFiles/stitch.dir/image_wrap.cpp.o
-.PHONY : image_wrap.cpp.o
+image_stitch.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stitch.dir/build.make CMakeFiles/stitch.dir/image_stitch.cpp.o
+.PHONY : image_stitch.cpp.o
 
-image_wrap.i: image_wrap.cpp.i
-.PHONY : image_wrap.i
+image_stitch.i: image_stitch.cpp.i
+.PHONY : image_stitch.i
 
 # target to preprocess a source file
-image_wrap.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stitch.dir/build.make CMakeFiles/stitch.dir/image_wrap.cpp.i
-.PHONY : image_wrap.cpp.i
+image_stitch.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stitch.dir/build.make CMakeFiles/stitch.dir/image_stitch.cpp.i
+.PHONY : image_stitch.cpp.i
 
-image_wrap.s: image_wrap.cpp.s
-.PHONY : image_wrap.s
+image_stitch.s: image_stitch.cpp.s
+.PHONY : image_stitch.s
 
 # target to generate assembly for a file
-image_wrap.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stitch.dir/build.make CMakeFiles/stitch.dir/image_wrap.cpp.s
-.PHONY : image_wrap.cpp.s
+image_stitch.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stitch.dir/build.make CMakeFiles/stitch.dir/image_stitch.cpp.s
+.PHONY : image_stitch.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -310,30 +273,6 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/stitch.dir/build.make CMakeFiles/stitch.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-orb_opencv.o: orb_opencv.cpp.o
-.PHONY : orb_opencv.o
-
-# target to build an object file
-orb_opencv.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/orb_opencv.dir/build.make CMakeFiles/orb_opencv.dir/orb_opencv.cpp.o
-.PHONY : orb_opencv.cpp.o
-
-orb_opencv.i: orb_opencv.cpp.i
-.PHONY : orb_opencv.i
-
-# target to preprocess a source file
-orb_opencv.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/orb_opencv.dir/build.make CMakeFiles/orb_opencv.dir/orb_opencv.cpp.i
-.PHONY : orb_opencv.cpp.i
-
-orb_opencv.s: orb_opencv.cpp.s
-.PHONY : orb_opencv.s
-
-# target to generate assembly for a file
-orb_opencv.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/orb_opencv.dir/build.make CMakeFiles/orb_opencv.dir/orb_opencv.cpp.s
-.PHONY : orb_opencv.cpp.s
-
 ransac_homo.o: ransac_homo.cpp.o
 .PHONY : ransac_homo.o
 
@@ -358,6 +297,30 @@ ransac_homo.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/stitch.dir/build.make CMakeFiles/stitch.dir/ransac_homo.cpp.s
 .PHONY : ransac_homo.cpp.s
 
+rm_crack.o: rm_crack.cpp.o
+.PHONY : rm_crack.o
+
+# target to build an object file
+rm_crack.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stitch.dir/build.make CMakeFiles/stitch.dir/rm_crack.cpp.o
+.PHONY : rm_crack.cpp.o
+
+rm_crack.i: rm_crack.cpp.i
+.PHONY : rm_crack.i
+
+# target to preprocess a source file
+rm_crack.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stitch.dir/build.make CMakeFiles/stitch.dir/rm_crack.cpp.i
+.PHONY : rm_crack.cpp.i
+
+rm_crack.s: rm_crack.cpp.s
+.PHONY : rm_crack.s
+
+# target to generate assembly for a file
+rm_crack.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stitch.dir/build.make CMakeFiles/stitch.dir/rm_crack.cpp.s
+.PHONY : rm_crack.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -366,35 +329,31 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... orb_opencv"
 	@echo "... stitch"
-	@echo "... brief_gao.o"
-	@echo "... brief_gao.i"
-	@echo "... brief_gao.s"
 	@echo "... brief_self.o"
 	@echo "... brief_self.i"
 	@echo "... brief_self.s"
+	@echo "... bright_consistency.o"
+	@echo "... bright_consistency.i"
+	@echo "... bright_consistency.s"
 	@echo "... brute_force_match.o"
 	@echo "... brute_force_match.i"
 	@echo "... brute_force_match.s"
-	@echo "... harris_opencv.o"
-	@echo "... harris_opencv.i"
-	@echo "... harris_opencv.s"
 	@echo "... harris_self.o"
 	@echo "... harris_self.i"
 	@echo "... harris_self.s"
-	@echo "... image_wrap.o"
-	@echo "... image_wrap.i"
-	@echo "... image_wrap.s"
+	@echo "... image_stitch.o"
+	@echo "... image_stitch.i"
+	@echo "... image_stitch.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... orb_opencv.o"
-	@echo "... orb_opencv.i"
-	@echo "... orb_opencv.s"
 	@echo "... ransac_homo.o"
 	@echo "... ransac_homo.i"
 	@echo "... ransac_homo.s"
+	@echo "... rm_crack.o"
+	@echo "... rm_crack.i"
+	@echo "... rm_crack.s"
 .PHONY : help
 
 
