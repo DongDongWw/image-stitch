@@ -18,7 +18,7 @@ void rm_crack(Mat& img);
 void bright_consistency(Mat& img);
 int main()
 {	
-	std::string path = "../../hw";
+	std::string path = "../../campus";
 	vector<string> img_paths; 
 	for (const auto & entry : filesystem::directory_iterator(path)){
 		img_paths.push_back(entry.path());
